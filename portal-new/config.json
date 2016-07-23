@@ -1,0 +1,215 @@
+{
+	"endpoints": [
+		"10.5.30.195:4040",
+		"10.5.30.195:5050",
+		"10.5.30.195:7070",
+		"10.5.30.195:9090"
+	],
+	"dspace_endpoint": "http://10.5.30.195:8080",
+	"map_dspace_solr": {
+		"handle": "handle",
+		"dc.subject.mesh": "dc.subject.mesh",
+		"dc.language.iso": "dc.language.iso",
+		"dc.date.copyright": "dc.date.copyright",
+		"dc.publisher.date": "dc.publisher.date",
+		"dc.format.mimetype": "dc.format.mimetype",
+		"dc.publisher.place": "dc.publisher.place",
+		"dc.identifier.other": "dc.identifier.other",
+		"dc.identifier.isbn": "dc.identifier.isbn",
+		"dc.identifier.issn": "dc.identifier.issn",
+		"dc.relation.requires": "dc.relation.requires",
+		"dc.relation.references": "dc.relation.references",
+		"dc.relation.isreferencedby": "dc.relation.isreferencedby",
+		"lrmi.typicalAgeRange": "lrmi.typicalAgeRange",
+		"lrmi.interactivityType": "lrmi.interactivityType",
+		"lrmi.educationalAlignment.difficultyLevel": "lrmi.educationalAlignment.difficultyLevel",
+		"dc.type": "unstemmed_dc.type",
+		"dc.title": "unstemmed_dc.title",
+		"dc.source": "unstemmed_dc.source",
+		"dc.publisher": "unstemmed_dc.publisher",
+		"dc.subject.ddc": "unstemmed_dc.subject.ddc",
+		"dc.type.degree": "unstemmed_dc.type.degree",
+		"dc.date.issued": "unstemmed_dc.date.issued",
+		"dc.date.awarded": "unstemmed_dc.date.awarded",
+		"dc.date.created": "unstemmed_dc.date.created",
+		"dc.format.extent": "unstemmed_dc.format.extent",
+		"dc.date.submitted": "unstemmed_dc.date.submitted",
+		"dc.contributor.author": "unstemmed_dc.contributor.author",
+		"dc.contributor.editor": "unstemmed_dc.contributor.editor",
+		"dc.contributor.other": "unstemmed_dc.contributor.other",
+		"dc.creator.researcher": "unstemmed_dc.creator.researcher",
+		"dc.contributor.advisor": "unstemmed_dc.contributor.advisor",
+		"dc.subject.prerequisitetopic": "unstemmed_dc.subject.prerequisitetopic",
+		"lrmi.learningResourceType": "unstemmed_lrmi.learningResourceType",
+		"lrmi.educationalUse": "unstemmed_lrmi.educationalUse",
+		"lrmi.educationalRole": "unstemmed_lrmi.educationalRole",
+		"lrmi.educationalAlignment.educationalLevel": "unstemmed_lrmi.educationalAlignment.educationalLevel"
+	},
+	"filters": {
+		"dc.creator.researcher": {
+			"type": "name",
+			"class": "primary"
+		},
+		"dc.contributor.advisor": {
+			"type": "name",
+			"class": "primary"
+		},
+		"dc.contributor.author": {
+			"type": "name",
+			"class": "primary"
+		},
+		"dc.contributor.editor": {
+			"type": "name",
+			"class": "primary"
+		},
+		"dc.publisher.place": {
+			"type": "free",
+			"class": "primary"
+		},
+		"dc.publisher": {
+			"type": "free",
+			"class": "primary"
+		},
+		"dc.publisher.date": {
+			"type": "date",
+			"class": "info"
+		},
+		"dc.date.awarded": {
+			"type": "date",
+			"class": "info"
+		},
+		"dc.date.created": {
+			"type": "date",
+			"class": "info"
+		},
+		"dc.date.issued": {
+			"type": "date",
+			"class": "info"
+		},
+		"dc.date.submitted": {
+			"type": "date",
+			"class": "info"
+		},
+		"dc.date.copyright": {
+			"type": "year",
+			"class": "info"
+		},
+		"dc.subject.mesh": {
+			"type": "mesh",
+			"class": "danger"
+		},
+		"dc.subject.ddc": {
+			"type": "ddc",
+			"class": "danger"
+		},
+		"dc.type": {
+			"type": "ctrl",
+			"class": "danger"
+		},
+		"dc.type.degree": {
+			"type": "ctrl",
+			"class": "danger"
+		},
+		"dc.language.iso": {
+			"type": "ctrl",
+			"class": "danger"
+		},
+		"dc.relation.requires": {
+			"type": "ctrl",
+			"class": "danger"
+		},
+		"dc.format.mimetype": {
+			"type": "ctrl",
+			"class": "danger"
+		},
+		"lrmi.typicalAgeRange": {
+			"type": "ctrl",
+			"class": "danger"
+		},
+		"lrmi.interactivityType": {
+			"type": "ctrl",
+			"class": "danger"
+		},
+		"lrmi.educationalAlignment.difficultyLevel": {
+			"type": "ctrl",
+			"class": "danger"
+		},
+		"lrmi.educationalAlignment.educationalLevel": {
+			"type": "ctrl",
+			"class": "danger"
+		},
+		"lrmi.learningResourceType": {
+			"type": "ctrl",
+			"class": "danger"
+		},
+		"lrmi.educationalRole": {
+			"type": "ctrl",
+			"class": "danger"
+		},
+		"lrmi.educationalUse": {
+			"type": "ctrl",
+			"class": "danger"
+		},
+		"dc.format.extent": {
+			"type": "extent",
+			"class": "success"
+		},
+		"dc.contributor.other": {
+			"type": "contrib_other",
+			"class": "success"
+		}
+	},
+	"unused_filters": {
+		"dc.subject.prerequisitetopic": "free",
+		"dc.identifier.isbn": "free",
+		"dc.identifier.issn": "free",
+		"dc.identifier.other": "free",
+		"dc.relation.references": "free",
+		"dc.relation.isreferencedby": "free"
+	},
+	"fields": {
+		"dc.relation.requires": "requires",
+		"dc.format.mimetype": "label label-warning metadata",
+		"dc.publisher.date": "text-muted metadata",
+		"dc.publisher.place": "",
+		"dc.creator.researcher": "",
+		"dc.contributor.advisor": "",
+		"dc.publisher": "",
+		"dc.type": "label label-primary metadata",
+		"dc.language.iso": "label label-default metadata",
+		"dc.type.degree": "label label-info metadata",
+		"dc.date.awarded": "text-muted metadata",
+		"dc.date.copyright": "text-muted metadata",
+		"dc.date.created": "text-muted metadata",
+		"dc.date.issued": "text-muted metadata",
+		"dc.date.submitted": "text-muted metadata",
+		"dc.contributor.author": "text-info metadata",
+		"dc.contributor.editor": "",
+		"dc.subject.ddc": "text-success metadata",
+		"lrmi.typicalAgeRange": "badge metadata",
+		"lrmi.interactivityType": "",
+		"lrmi.educationalAlignment.difficultyLevel": "",
+		"lrmi.educationalAlignment.educationalLevel": "badge metadata",
+		"lrmi.learningResourceType": "label label-success metadata",
+		"lrmi.educationalRole": "label label-info metadata",
+		"lrmi.educationalUse": ""
+	},
+	"results_per_page": [
+		"5",
+		"10",
+		"20",
+		"50"
+	],
+	"sorting": [
+		"handle",
+		"dc.title"
+	],
+	"facet_limit": 2000,
+	"name_exception_words": [
+		"and",
+		"to",
+		"govt",
+		"of",
+		"the"
+	]
+}
